@@ -18,8 +18,8 @@ else
     mkdir -p ~/yazi
     
     # Extract the zip file to ~/yazi, overwriting existing files
-    unzip -o /tmp/yazi.zip -d ~/yazi
-    
+   unzip -o /tmp/yazi.zip 'yazi-x86_64-unknown-linux-gnu/*' -d ~/yazi/
+ 
     # Ensure the binaries are executable
     chmod +x ~/yazi/ya ~/yazi/yazi
     
